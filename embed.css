@@ -1,0 +1,105 @@
+* {
+    color: whitesmoke;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #269126;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compass {
+    width: 100%;
+    height: 100%;   
+    background-color: rgb(59, 59, 59);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2%;
+}
+
+.compass > .top, .bot {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.compass > .mid {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mid > .dice {
+    width: 30vw; height: 30vw;
+    text-align: center;
+    vertical-align: middle;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.dir > input {
+    width: 80%;
+    height: 90%;
+    font-size: 2rem;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+button.edge {
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+#dir1, #dir3 {
+    width: 20rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+#dir2, #dir4 {
+    width: 20rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed</title>
+    <link rel="stylesheet" href="embed.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<div class="compass">
+    <div class="top">
+        <button class="edge" onclick="Rotate()">回</button>
+        <div id="dir1" class="dir" style="transform: rotate(180deg);">東
+            <input id="point1" value="25000"/>
+        </div>
+        <button class="edge">サ</button>
+    </div>
+
+    <div class="mid">
+        <div id="dir2" class="dir" style="transform: rotate(90deg);">南
+            <input id="point2" value="25000"/>
+        </div>
+        <button class="dice">
+            サイコロを回す
+        </button>
+        <div id="dir4" class="dir" style="transform: rotate(270deg);">北
+            <input id="point4" value="25000"/>
+        </div>
+    </div>
+
+    <div class="bot">
+        <button class="edge">？</button>
+        <div id="dir3" class="dir">西
+            <input id="point3" value="25000"/>
+        </div>
+        <button class="edge">リ</button>
+    </div>
+</div>
+</body>
+</html>
